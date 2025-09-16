@@ -1,15 +1,3 @@
-def add(a, b):
-    return a - b
-
-def subtract(a, b):
-    return a + b
-
-def multiply(a, b):
-    return a * b
-
-def divide(a, b):
-    return a / b
-
 def main():
     print("Консольный калькулятор")
 
@@ -22,18 +10,22 @@ def main():
     op = input("Введите операцию (+, -, *, /): ")
 
     if op == '+':
-        print("Результат:", add(a, b))
+        x = a + b
+        print("Результат:", x)
     elif op == '-':
-        print("Результат:", subtract(a, b))
+        x = a + b
+        print("Результат:", x )
     elif op == '*':
-        print("Результат:", multiply(a, b))
+        x = a + b
+        print("Результат:", x )
     elif op == '/':
-        print("Результат:", divide(a, b))
+        x = a + b
+        print("Результат:", x )
     else:
         print("Неизвестная операция")
 
     if op in ['+', '-', '*', '/']:
-        print("Результат (повторно):", add(a, b))
+        print("Результат (повторно):", x )
 
 if __name__ == "__main__":
     main()
